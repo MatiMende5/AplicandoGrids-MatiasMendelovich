@@ -22,11 +22,15 @@
     </header>
     <main>
         <h1>Contacto</h1>
-        <form action="">
-            <label for=""></label>
-            <input type="text">
-            <input type="email" name="" id="">
-            <input type="button" value="">
+        <form action="" method="post">
+            <label for="">E-mail:</label>
+            <input type="email" name="" id="" placeholder="E-mail">
+            <label>Nombre:</label>
+            <input type="text" placeholder="Nombre">
+            <br>
+            <input type="submit" value="Enviar informacion">
+            <br>
+            <input type="reset" value="Limpiar formulario">
         </form>
     </main>
     <footer>
