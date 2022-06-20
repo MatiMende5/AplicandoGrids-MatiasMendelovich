@@ -24,7 +24,7 @@
         <h1>Contacto</h1>
         <form action="" method="post">
             <label for="">E-mail:</label>
-            <input type="email" name="" id="" placeholder="E-mail">
+            <input type="email" name="Nombre" id="" placeholder="E-mail">
             <label>Nombre:</label>
             <input type="text" placeholder="Nombre">
             <br>
