@@ -8,30 +8,96 @@
     <title>Club Atletico Birra</title>
 </head>
 <body>
+    <!--Inicio Header-->
     <header>
         <div>
             <a href="" class="logo">
                 <img src="/imagenes/favicon-32x32.png" alt="logo de la pagina">
-                <h2 class="nombre-empresa"> Club Atletico Birra</h2>
+                <h2> Club Atletico Birra</h2>
             </a>
         </div>
-        <nav>
-            <div>
-                <a href="./index.html">Inicio</a>
-                <a href="./paginas/Deportes.html">Deportes</a>
-                <a href="./paginas/Actividades.html">Actividades</a>
-                <a href="./paginas/Novedades.html">Novedades</a>
-                <a href="./paginas/Servicios.html">Servicios</a>
-                <a href="./paginas/Contacto.html">Contacto</a>
-                <a href="./paginas/Socio.html">Hacete socio</a>
-            </div>
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./paginas/Deportes.html">Deportes</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"> 
+                            <a class=submenu__link href="./paginas/Futbol.html">Futbol</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a class=submenu__link href="./paginas/Gimnasia Artistica.html">Gimnasia Artistica</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a class=submenu__link href="./paginas/Hockey.html">Hockey</a>
+                        </li class="submenu__item">
+                        <li class="submenu__item">
+                            <a class=submenu__link href="./paginas/natacion.html">Natacion</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./paginas/Actividades.html">Actividades</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./paginas/Novedades.html">Novedades</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./paginas/Servicios.html">Servicios</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./paginas/Contacto.html">Contacto</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./paginas/Socio.html">Hacete socio</a>
+                </li>
+            </ul>
         </nav>
     </header>
+    <!--Fin Header-->
     <div class="imagen">
         <p>El mejor club de latinoamerica</p>
         <h1>CLUB ATLETICO BIRRA</h1>
         <p>Actividades</p>
     </div>
+    <main class="">
+        <section class="cards">
+            <article class="box">
+                <picture class="box__img">
+                    <img src="./imagenes/imagen caja niño.jpg" alt="">
+                </picture>
+
+                <div class="box__info">
+                    <h2 class="box__title">Niños</h2>
+                    <h3 class="box__subtitle">Veni a sumarte con los niños del club</h3>
+                </div>
+            </article>
+
+            <article class="box">
+                <picture class="box__img">
+                    <img src="./imagenes/imagen caja mujer.jpg" alt="">
+                </picture>
+
+                <div class="box__info">
+                    <h2 class="box__title">Mujeres</h2>
+                    <h3 class="box__subtitle">Veni a sumarte con las mujeres del club</h3>
+                </div>
+            </article>
+
+            <article class="box">
+                <picture class="box__img">
+                    <img src="./imagenes/imagen caja profesional.jpg" alt="">
+                </picture>
+
+                <div class="box__info">
+                    <h2 class="box__title">Profesionales</h2>
+                    <h3 class="box__subtitle">Veni a sumarte con nuestros profesionales</h3>
+                </div>
+            </article>
+        </section>
+    </main>
     <footer>
         <p>CLUB ATLETICO BIRRA. Todos los derechos reservados.</p>
     </footer>
