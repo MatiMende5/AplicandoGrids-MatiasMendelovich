@@ -1,2 +1,2 @@
-# Entrega-uno-
-Primer entrega CoderHouse
+# Entrega-dos-
+Segunda entrega CoderHouse
