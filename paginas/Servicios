@@ -4,19 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Club Atletico Birra</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Deportes.html">Deportes</a></li>
-                <li><a href="./Actividades.html">Actividades</a></li>
-                <li><a href="./Novedades.html">Novedades</a></li>
-                <li><a href="./Servicios.html">Servicios</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                <li><a href="./Socio.html">Hacete socio</a></li>
+        <div>
+            <a href="" class="logo">
+                <img src="/imagenes/favicon-32x32.png" alt="logo de la pagina">
+                <h2> Club Atletico Birra</h2>
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Deportes.html">Deportes</a>
+                    <ul class="submenu">
+                        <li class="submenu__item"> 
+                            <a class=submenu__link href="Futbol.html">Futbol</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a class=submenu__link href="Gimnasia Artistica.html">Gimnasia Artistica</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a class=submenu__link href="Hockey.html">Hockey</a>
+                        </li class="submenu__item">
+                        <li class="submenu__item">
+                            <a class=submenu__link href="natacion.html">Natacion</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Actividades.html">Actividades</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Novedades.html">Novedades</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Servicios.html">Servicios</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Contacto.html">Contacto</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Socio.html">Hacete socio</a>
+                </li>
             </ul>
         </nav>
     </header>
