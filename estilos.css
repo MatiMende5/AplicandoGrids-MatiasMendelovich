@@ -69,6 +69,9 @@ header{
     align-items: center;
     padding: var(--spacing-xsmall);
 }
+.navegation{
+    float: left;
+}
 .menu{
     display: flex;
     list-style: none;
@@ -86,10 +89,15 @@ header{
     padding: var(--spacing-small);
     transition: all 1s;
 }
+.menu__div{
+    flex: block;
+}
 .submenu{
     list-style: none;
     display: none;
     position: absolute;
+    background-color: white;
+    opacity: 80%;
 }
 .submenu__link{
     text-decoration: none;
@@ -111,6 +119,7 @@ main{
 .cards{
     display: flex;
     margin-top: 30px;
+    text-align: center;
 }
 
 .nombre__empresa{
@@ -125,6 +134,9 @@ main{
     font-size: var(--text-small);
     max-width: 140px;
 }
+.text__pag{
+    display: block;
+}    
 .logo de la pagina{
     height: 50px;
     margin-right: 10px;
@@ -156,7 +168,7 @@ footer{
     width: 400px;
 }
 .box__info{
-    padding: 1.5rem;
+    padding-top: 1.5rem;
 }
 .img__2{
     object-fit: scale-down;
@@ -169,6 +181,22 @@ footer{
 .img__1{
     object-fit: scale-down;
     max-width: 300px;
+}
+/* Galeria principal */
+.fotos__seleccion{
+    align-items: center;
+    display: flex;
+}
+.title__seleccion{
+    color: var(--secondary);
+    font-size: 2.5em;
+}
+.galeria__principal{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: var(--spacing-small);
+    padding: 40px;
 }
 /* INDEX */
 /* DEPORTES */
@@ -271,8 +299,8 @@ footer{
 
 .gallery{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: repeat(1, 1fr);
     gap: var(--spacing-small);
 }
 .gallery__img:nth-of-type(1){
