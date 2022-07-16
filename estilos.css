@@ -72,7 +72,7 @@ header{
 .navegation{
     float: left;
 }
-.menu{
+.navegation ul{
     display: flex;
     list-style: none;
     gap: 20px;
@@ -92,24 +92,45 @@ header{
 .menu__div{
     flex: block;
 }
-.submenu{
-    list-style: none;
+.menu-icon{
     display: none;
-    position: absolute;
-    background-color: white;
-    opacity: 80%;
 }
-.submenu__link{
-    text-decoration: none;
-    font-size: var(--text-small);
-    padding: var(--spacing-small);
-    color:black
+@media only screen and (max-width: 760px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        min-height: 60px;
+        text-align: center;
+        background-color: white;
+        align-items: center;
+        padding: var(--spacing-xsmall);
+    }
+    .menu__link{
+        text-decoration: none;
+        font-size: var(--text-small);
+        color: black;
+        border: 2px solid white;
+        padding: var(--spacing-small);
+        transition: all 1s;
+        padding: 0.5rem 0;
+        display: block;
+    }
+.navegation ul{
+    display: none;
+    gap: 20px;
 }
-.menu__item:hover .submenu{
+.menu-icon{
+    display: block;
+    cursor: pointer;
+    font-size: medium;
+    padding: 0.5rem 0;
+}
+.menu__item{
     display: block;
 }
-.submenu__item{
-    padding: var(--spacing-xsmall);
+.navegation ul.show{
+    display: block;
+}
 }
 main{
     display: flex;
@@ -119,7 +140,9 @@ main{
 .cards{
     display: flex;
     margin-top: 30px;
-    text-align: center;
+    gap: var(--spacing-small);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nombre__empresa{
@@ -133,9 +156,10 @@ main{
     color: black;
     font-size: var(--text-small);
     max-width: 140px;
+    min-width: 20px;
 }
 .text__pag{
-    display: block;
+    display: flex;
 }    
 .logo de la pagina{
     height: 50px;
@@ -197,6 +221,42 @@ footer{
     grid-template-rows: repeat(1, 1fr);
     gap: var(--spacing-small);
     padding: 40px;
+}
+.galeria__img__principal:nth-of-type(1){
+    grid-column: 1 / 2;
+}
+.galeria__img__principal:nth-of-type(2){
+    grid-column: 2 / 3;
+}
+.galeria__img__principal:nth-of-type(3){
+    grid-column: 3 / 4;
+}
+.galeria__img__principal:nth-of-type(4){
+    grid-column: 4 / 5;
+}
+@media screen and (max-width:760px){
+    .galeria__principal{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: var(--spacing-small);
+        padding: 40px;
+    }
+    .galeria__img__principal:nth-of-type(1){
+        grid-column: 1 / 1;
+    }
+    .galeria__img__principal:nth-of-type(2){
+        grid-column: 1 / 1;
+    }
+    .galeria__img__principal:nth-of-type(3){
+        grid-column: 1 / 1;
+    }
+    .galeria__img__principal:nth-of-type(4){
+        grid-column: 1 / 1;
+    }
+    .galeria__img__principal{
+        max-width: 300px;
+    }
 }
 /* INDEX */
 /* DEPORTES */
@@ -319,10 +379,34 @@ footer{
     grid-column: 9 / 13;
     grid-row: 2 / 4;
 }
-@media screen and (max-width:880px){
-    .info{
-        flex-direction: column;
+@media screen and (max-width:760px){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: var(--spacing-small);
     }
+    .gallery__img:nth-of-type(1){
+        grid-column: 1 / 1;
+    }
+    .gallery__img:nth-of-type(2){
+        grid-column: 1 / 1;
+    }
+    .gallery__img:nth-of-type(3){
+        grid-column: 1 / 1;
+    }
+    .gallery__img:nth-of-type(4){
+        grid-column: 1 / 1;
+    }
+    .gallery__img:nth-of-type(5){
+        grid-column: 1 / 1;
+}
+.info{
+    flex-direction: column;
+}
+.gallery__img{
+    max-width: 500px;
+}
 }
 @media screen and (max-width:480px){
     .cards__1{
